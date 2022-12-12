@@ -57,8 +57,6 @@ distances[start] = 0
 distance = distances[start]
 while unvisited:
 	unvisited_neighbors = [node for node in node.children if node in unvisited]
-	
-	print(node)
 	for neighbor in unvisited_neighbors:
 		if distances[neighbor] > distance:
 			distances[neighbor] = distance
